@@ -1,7 +1,8 @@
 module github.com/HyeJong/sqlx
 
+go 1.12
+
 require (
-	github.com/go-sql-driver/mysql v1.4.0
-	github.com/lib/pq v1.0.0
-	github.com/mattn/go-sqlite3 v1.9.0
+	github.com/jmoiron/sqlx v1.2.0
+	go.elastic.co/apm/module/apmsql v1.6.0
 )

@@ -12,7 +12,7 @@ import (
 	"strings"
 	"sync"
 
-	"http://go.elastic.co/apm/module/apmsql"
+	"go.elastic.co/apm/module/apmsql"
 	"github.com/jmoiron/sqlx/reflectx"
 )
 
