@@ -12,6 +12,7 @@ import (
 	"strings"
 	"sync"
 
+	"http://go.elastic.co/apm/module/apmsql"
 	"github.com/jmoiron/sqlx/reflectx"
 )
 
@@ -263,7 +264,7 @@ func (db *DB) DriverName() string {
 
 // Open is the same as sql.Open, but returns an *sqlx.DB instead.
 func Open(driverName, dataSourceName string) (*DB, error) {
-	db, err := sql.Open(driverName, dataSourceName)
+	db, err := apmsql.Open(driverName, dataSourceName)
 	if err != nil {
 		return nil, err
 	}
